@@ -1,9 +1,11 @@
 package test;
 
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import metier.Achat;
 import metier.Adresse;
 import metier.Boutique;
 import metier.Client;
@@ -15,9 +17,9 @@ public class Test {
 	public static void main(String[] args) {
 
 		
-Console c1= new Console("Switch",300,"12/02/2017");
-Console c2=new Console("Switch Lite",250,"13/05/2018");	
-Console c3=new Console("Nintendo 2DS XL",200,"13/10/2012");
+Console c1= new Console("Switch",300,LocalDate.now());
+Console c2=new Console("Switch Lite",250,LocalDate.now());	
+Console c3=new Console("Nintendo 2DS XL",200,LocalDate.now());
 
 List<Console> consoles=new ArrayList();
 consoles.add(c1);
@@ -41,12 +43,15 @@ Adresse a1= new Adresse(12,"Rue de la Nintendog","NintendoCity") ;
 
 Boutique b1= new Boutique("Nintendo Products",a1,jeux);
 
-List<Jeu> jeuxclient1 = new ArrayList();
-jeuxclient1.add(j1);
-jeuxclient1.add(j3);
-jeuxclient1.add(j4);
+Achat A1 = new Achat(j1,LocalDate.now(),40,b1);
+Achat A2 = new Achat(j2,LocalDate.now(),40,b1);
 
-Client client1= new Client("Dehorter","Aymeric",jeuxclient1);
+List<Achat> achats = new ArrayList();
+achats.add(A1);
+achats.add(A2);
+
+
+Client client1= new Client("Dehorter","Aymeric",achats);
 
 	}
 
