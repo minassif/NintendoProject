@@ -33,7 +33,7 @@ jeux.add(j3);
 jeux.add(j4);
 jeux.add(j5);
 
-Adresse a1= new Adresse() ;
+Adresse a1= new Adresse(12,"Rue de la Nintendog","NintendoCity") ;
 
 Boutique b1= new Boutique("Nintendo Products",a1,jeux);
 
