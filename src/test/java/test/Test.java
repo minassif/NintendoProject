@@ -10,16 +10,18 @@ import metier.Adresse;
 import metier.Boutique;
 import metier.Client;
 import metier.Console;
+import metier.Hybride;
 import metier.Jeu;
+import metier.Portable;
 
 public class Test {
 
 	public static void main(String[] args) {
 
 		
-Console c1= new Console("Switch",300,LocalDate.now());
-Console c2=new Console("Switch Lite",250,LocalDate.now());	
-Console c3=new Console("Nintendo 2DS XL",200,LocalDate.now());
+Console c1= new Hybride("Switch",300,LocalDate.now());
+Console c2=new Hybride("Switch Lite",250,LocalDate.now());	
+Console c3=new Portable("Nintendo 2DS XL",200,LocalDate.now());
 
 List<Console> consoles=new ArrayList();
 consoles.add(c1);
