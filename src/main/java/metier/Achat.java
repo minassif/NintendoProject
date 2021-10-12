@@ -9,6 +9,7 @@ private LocalDate date ;
 private double prix;
 private Boutique boutique ;
 public Achat(Jeu jeux, LocalDate date, double prix, Boutique boutique) {
+	
 	super();
 	this.jeux = jeux;
 	this.date = date;
