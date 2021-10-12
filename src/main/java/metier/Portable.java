@@ -1,19 +1,23 @@
 package metier;
 
+import java.time.LocalDate;
+
 public class Portable extends Console {
 
-	public Portable(String nom) {
-		super(nom);
+	
+
+	public Portable(String nom, int prix, LocalDate dateSortie) {
+		super(nom, prix, dateSortie);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String toString() {
-		return "Portable [getNom()=" + getNom() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + "]";
+		return "Portable [nom=" + nom + ", prix=" + prix + ", dateSortie=" + dateSortie + "]";
 	}
 
 	
-	
+
 	
 	
 
