@@ -15,16 +15,20 @@ public class Test {
 	public static void main(String[] args) {
 
 		
-Console c1= new Console("Switch");
-Console c2=new Console("Switch Lite");	
-Console c3=new Console("Nintendo 2DS XL");
+Console c1= new Console("Switch",300,"12/02/2017");
+Console c2=new Console("Switch Lite",250,"13/05/2018");	
+Console c3=new Console("Nintendo 2DS XL",200,"13/10/2012");
 
+List<Console> consoles=new ArrayList();
+consoles.add(c1);
+consoles.add(c2);
+consoles.add(c3);
 
-Jeu j1 =new Jeu ("Mario Kart 8",c1);
-Jeu j2 =new Jeu ("Mario golf",c2);
-Jeu j3 =new Jeu ("The Legend of Zelda",c3);
-Jeu j4 =new Jeu ("No More Heroes 3",c1);
-Jeu j5 =new Jeu ("WarioWare",c2);
+Jeu j1 =new Jeu ("Mario Kart 8",consoles);
+Jeu j2 =new Jeu ("Mario golf",consoles);
+Jeu j3 =new Jeu ("The Legend of Zelda",consoles);
+Jeu j4 =new Jeu ("No More Heroes 3",consoles);
+Jeu j5 =new Jeu ("WarioWare",consoles);
 
 List<Jeu> jeux = new ArrayList();
 jeux.add(j1);
