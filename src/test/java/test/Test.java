@@ -6,6 +6,7 @@ import java.util.List;
 
 import metier.Adresse;
 import metier.Boutique;
+import metier.Client;
 import metier.Console;
 import metier.Jeu;
 
@@ -36,6 +37,12 @@ Adresse a1= new Adresse() ;
 
 Boutique b1= new Boutique("Nintendo Products",a1,jeux);
 
+List<Jeu> jeuxclient1 = new ArrayList();
+jeuxclient1.add(j1);
+jeuxclient1.add(j3);
+jeuxclient1.add(j4);
+
+Client client1= new Client("Dehorter","Aymeric",jeuxclient1);
 
 	}
 
